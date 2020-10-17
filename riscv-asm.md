@@ -148,10 +148,10 @@ The following table lists assembler directives:
 
 Directive    | Arguments                      | Description
 :----------- | :-------------                 | :---------------
-.align       | integer                        | align to power of 2 (alias for .p2align)
+.align       | integer                        | align to power of 2 (alias for .p2align) 
 .file        | "filename"                     | emit filename FILE LOCAL symbol table
-.globl       | symbol_name                    | emit symbol_name to symbol table (scope GLOBAL)
-.local       | symbol_name                    | emit symbol_name to symbol table (scope LOCAL)
+.globl       | symbol_name                    | emit symbol_name to symbol table (scope GLOBAL) 设置全局符号（供链接器使用）
+.local       | symbol_name                    | emit symbol_name to symbol table (scope LOCAL)  设置本地符号
 .comm        | symbol_name,size,align         | emit common object to .bss section
 .common      | symbol_name,size,align         | emit common object to .bss section
 .ident       | "string"                       | accepted for source compatibility
